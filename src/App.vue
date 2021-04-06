@@ -1,8 +1,9 @@
 <script>
     import Flex from "./components/Flex";
+    import Spread from "./components/Spread";
     export default {
         name: 'App',
-        components: {Flex}
+        components: {Spread, Flex}
     }
 </script>
 
@@ -13,6 +14,7 @@
             Test app to see what transpiling does
         </h1>
         <Flex/>
+        <Spread/>
     </div>
 </template>
 
@@ -25,6 +27,7 @@
         }
 
         .example {
+            margin-bottom: 32px;
 
             .example__head {
                 font-weight: 700;
