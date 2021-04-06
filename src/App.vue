@@ -1,9 +1,10 @@
 <script>
     import Flex from "./components/Flex";
     import Spread from "./components/Spread";
+    import Sticky from "./components/Sticky";
     export default {
         name: 'App',
-        components: {Spread, Flex}
+        components: {Sticky, Spread, Flex}
     }
 </script>
 
@@ -15,6 +16,7 @@
         </h1>
         <Flex/>
         <Spread/>
+        <Sticky/>
     </div>
 </template>
 
@@ -33,6 +35,10 @@
                 font-weight: 700;
                 border-left: 2px solid red;
                 padding-left: 8px;
+                margin-bottom: 12px;
+            }
+
+            .example__caniuse {
                 margin-bottom: 12px;
             }
 
